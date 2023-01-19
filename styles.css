@@ -1,0 +1,168 @@
+* {
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background-color: #F0F2F5;
+}
+
+section, footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section div {
+    display: inline-block;
+}
+
+section div.texto img {
+    height: 106px;
+    margin-bottom: -27px;
+}
+
+section div.texto p {
+    font-size: 28px;
+    color: rgb(28, 30, 33);
+    width: 580px;
+    padding: 30px;
+    line-height: 40px;
+}
+
+.formulario-container {
+    width: 396px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.formulario-container form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formulario-container form input {
+    width: 364px;
+    height: 52px;
+    display: block;
+    margin: auto;
+    border: 1px solid rgb(221, 223, 226);
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.formulario-container form input::placeholder {
+    color: #88888c;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.formulario-container form input:focus {
+    border: 1px solid #1B74E4;
+}
+
+.formulario-container form button {
+    display: block;
+    margin: auto;
+    width: 386px;
+    height: 52px;
+    background-color: #1877F2;
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.formulario-container form button:hover {
+    background-color: #1664c9;
+    transition: 250ms;
+}
+
+.formulario-container form a#forgotPassword {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #1877F2;
+    font-size: 14px;
+    font-weight: 350;
+    margin-bottom: 15px;
+}
+
+.formulario-container form hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(221, 223, 226);
+    margin-bottom: 15px;
+}
+
+.formulario-container form a#newAccount {
+    display: block;
+    margin: auto;
+    width: 166px;
+    text-align: center;
+    padding: 12px;
+    background-color: #42B72A;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: 250ms;
+}
+
+.formulario-container form a#newAccount:hover {
+    background-color: #308a1d;
+}
+
+.formulario-container p {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: -60px;
+}
+
+.formulario-container p > a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+
+footer {
+    margin-top: 150px;
+    width: 75%;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline;
+    font-size: 10px;
+}
+
+@media (max-width: 1115px) {
+    section div.texto p { font-size: 22px; }
+}
+
+@media (max-width: 1080px) {
+    section {
+        justify-content: center;
+        width: 500px;
+    }
+
+    section div.texto p {
+        width: 80%;
+        text-align: justify;
+        padding: 10px 30px;
+    }
+
+    section div.texto img {
+        display: block;
+        margin: auto;
+    }
+}
